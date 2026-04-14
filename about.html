@@ -3,109 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About | Numan Kavurmaci</title>
+    <meta
+      name="description"
+      content="Experience, education, skills, and certifications for Numan Kavurmaci."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container-fluid">
-        <img src="numankavurmaci.jpg" alt="Logo" class="logo-img" />
-        <nav>
-          <ul class="navbar-brand">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link text-white"
-                >Experience and Education</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link text-white">Contact</a>
-            </li>
-          </ul>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <img src="numankavurmaci.jpg" alt="Portrait of Numan Kavurmaci" class="brand-photo" />
+          <div>
+            <span class="brand-name">Numan Kavurmaci</span>
+            <span class="brand-role">Software Engineer</span>
+          </div>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html">Work</a>
+          <a class="nav-link active" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <main class="about-page">
-      <section class="container">
-        <ul class="list-unstyled text-white">
-          <section>
-            <div class="container mx-auto">
-              <div class="section-heading text-center mb-5">
-                <h2 class="display-4 text-white">
-                  Software Development Experience
-                </h2>
-              </div>
-              <div class="experience-item">
-                <ul class="list-unstyled text-white">
-                  <li class="mb-5">
-                    <h3 class="mb-3">TicketNetwork/ Infodeal</h3>
-                    <p class="mb-3">
-                      <strong>Junior Full Stack Developer</strong><br />
-                      October 2023 - Current<br />
-                      Location: Remote
-                    </p>
-                    <p>
-                      Specializing in full-stack web development with a focus on
-                      on Next.js and JavaScript/TypeScript, I have successfully
-                      navigated complex problem-solving, task completion, and
-                      backend integrations. My role required rapid adaptability
-                      to new sprints, proactive learning, and effective stress
-                      management in fastpaced environments. I consistently met
-                      expectations, contributing to significant performance
-                      improvements, and I am committed to continuous personal
-                      and professional growth. My collaborative skills, though a
-                      work in progress, complement my technical expertise and
-                      dedication to quality
-                    </p>
-                  </li>
+      <main>
+        <section class="section hero-tight fade-in">
+          <p class="eyebrow">About me</p>
+          <h1>Full-stack engineer.</h1>
+          <p class="hero-text max-copy">
+            I build user-facing experiences and the systems behind them. My recent work has centered on React,
+            Next.js, TypeScript, ES5/ES6+, UI standardization, SEO-sensitive templates, integrations, and solving
+            messy implementation problems in fast-moving environments. I care about maintainability, clarity, and
+            shipping features that actually improve the product.
+          </p>
+        </section>
 
-                  <li class="mb-5">
-                    <h3 class="mb-3">BizNezAI</h3>
-                    <p class="mb-3">
-                      <strong>Software Developer (Back-end)</strong><br />
-                      June 2023 - July 2023<br />
-                      Location: Remote
-                    </p>
-                    <p>
-                      As part of the Listingmagic project, I successfully
-                      completed a prototype that utilizes Azure Functions and
-                      Langchain. My role involved developing the back-end
-                      functionalities, integrating the Azure platform services,
-                      and implementing the Langchain technology to enable
-                      seamless language processing in the project.
-                    </p>
-                  </li>
+        <section class="section two-column fade-in-delay">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-meta">
+                  <span>March 2025 - March 2026</span>
+                  <span>Remote</span>
+                </div>
+                <h2>Software Engineer · Infodeal Business Solutions</h2>
+                <p>
+                  Built and launched core TicketPurchase and SHI templates, modernized reusable layouts,
+                  standardized shared UI modules, and delivered SEO, tracking, and conversion-sensitive improvements
+                  across CMS-driven page systems.
+                </p>
+                <ul class="detail-list">
+                  <li>Shipped category, city, performer, venue, maps, promo, and editorial template work.</li>
+                  <li>Improved SSR and CSR parity, reusability, and editor control through cleaner shared patterns.</li>
+                  <li>Fixed UI regressions, malformed assets, SEO issues, and conversion-affecting edge cases.</li>
                 </ul>
-              </div>
-            </div>
-          </section>
+              </article>
 
-          <section>
-            <h2 class="section-heading">Education</h2>
-            <ul class="list-unstyled text-white">
-              <li>
-                <h3>Karabuk University</h3>
-                <p>Bachelor's Degree, Civil Engineering · (2017 - July 2022)</p>
-              </li>
-            </ul>
-          </section>
-        </ul>
-      </section>
-    </main>
+              <article class="timeline-item">
+                <div class="timeline-meta">
+                  <span>October 2023 - March 2025</span>
+                  <span>Remote</span>
+                </div>
+                <h2>Junior Full Stack Developer · Infodeal Business Solutions</h2>
+                <p>
+                  Delivered high-impact product features with React, Next.js, Node.js, TypeScript, HTML, CSS,
+                  and ES5 JavaScript inside a fast sprint cycle with minimal QA support.
+                </p>
+                <ul class="detail-list">
+                  <li>Built reusable GTM-friendly components and server/client rendered UI features.</li>
+                  <li>Worked on complex headers, carousels, venue maps, checkout SVG flows, and AI-driven content displays.</li>
+                  <li>Used caching strategies, list virtualization, and reverse engineering to solve platform constraints.</li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-meta">
+                  <span>June 2023 - July 2023</span>
+                  <span>Remote</span>
+                </div>
+                <h2>Software Developer · BizNezAI</h2>
+                <p>
+                  Helped build a property-listing prototype for UK listing agents using Azure Functions, Azure
+                  Cognitive Services, Azure Cosmos DB, ChatGPT-based workflows, and mapping APIs.
+                </p>
+                <ul class="detail-list">
+                  <li>Implemented backend logic, synchronization flows, and user management capabilities.</li>
+                  <li>Integrated AI and search services to improve listing generation and discovery.</li>
+                  <li>Contributed meaningfully to the prototype&apos;s backend and user-centric search experience.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <aside class="sidebar-stack">
+            <article class="sidebar-card">
+              <p class="eyebrow">Core stack</p>
+              <ul class="tag-list">
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Hono</li>
+                <li>HTML & CSS</li>
+                <li>Playwright</li>
+                <li>Prisma</li>
+                <li>SQLite</li>
+              </ul>
+            </article>
+
+            <article class="sidebar-card">
+              <p class="eyebrow">Top skills</p>
+              <ul class="detail-list compact-list">
+                <li>Full-stack development</li>
+                <li>Agile and Scrum collaboration</li>
+                <li>UI systems and component reuse</li>
+                <li>SEO-sensitive implementation</li>
+                <li>Reverse engineering and debugging</li>
+              </ul>
+            </article>
+
+            <article class="sidebar-card">
+              <p class="eyebrow">Education</p>
+              <h3>Karabuk University</h3>
+              <p>Bachelor&apos;s Degree in Civil Engineering</p>
+              <p>2017 - July 2022</p>
+            </article>
+
+            <article class="sidebar-card">
+              <p class="eyebrow">Selected certifications</p>
+              <ul class="detail-list compact-list">
+                <li>Oyun ve Uygulama Akademisi Ideathon 2024</li>
+                <li>Proje Yonetiminin Temelleri</li>
+                <li>Proje Planlamasi: Her Seyi Bir Araya Getirmek</li>
+                <li>Projeyi Baslatma: Projeye Basariyla Adim Atma</li>
+              </ul>
+            </article>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Numan Kavurmaci</p>
+        <a class="text-link" href="Numan-Kavurmaci-CV-2026.pdf" target="_blank" rel="noopener">Download latest CV</a>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
-
-    <footer class="bg-dark text-white py-2 mt-auto">
-      <p>&copy; 2023 Numan Kavurmacı. All rights reserved.</p>
-    </footer>
   </body>
 </html>
