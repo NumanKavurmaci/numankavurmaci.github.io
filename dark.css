@@ -1,0 +1,106 @@
+:root {
+  --bg: #0b1210;
+  --bg-soft: #101d19;
+  --surface: #121c19;
+  --surface-strong: #16231f;
+  --ink: #f0f7f3;
+  --ink-soft: #d5e4dd;
+  --muted: #9eb2aa;
+  --muted-strong: #c0d1ca;
+  --accent: #42d7c7;
+  --accent-strong: #7cc7ff;
+  --accent-warm: #ff9f74;
+  --border: #263a34;
+  --border-strong: #3f6f64;
+  --terminal: #070d0b;
+  --terminal-soft: #0d1714;
+  --shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(66, 215, 199, 0.1), transparent 34%),
+    linear-gradient(180deg, #0b1210 0%, #0d1714 58%, #080d0c 100%);
+}
+
+.site-header,
+.proof-strip span,
+.impact-grid span,
+.skill-clusters span,
+.tag-list li,
+.project-details,
+.flow-step,
+.skill-stage,
+.social-link,
+.button-secondary {
+  background: rgba(18, 28, 25, 0.88);
+}
+
+.site-header,
+.system-section,
+.project-feature,
+.info-band,
+.timeline-item,
+.project-card,
+.sidebar-card,
+.contact-row,
+.skill-map,
+.social-link,
+.button-secondary,
+.project-details,
+.flow-step,
+.skill-stage,
+.proof-strip span,
+.impact-grid span,
+.skill-clusters span,
+.tag-list li {
+  border-color: var(--border);
+}
+
+.nav-link:hover,
+.nav-link.active,
+.flow-panel,
+.skill-map-panel,
+.flow-step.is-active,
+.skill-stage.is-active {
+  background: #132821;
+}
+
+.button-primary {
+  color: #04110f;
+  background: var(--accent);
+  box-shadow: 0 10px 28px rgba(66, 215, 199, 0.2);
+}
+
+.info-band {
+  background: linear-gradient(135deg, #111f1b, #07100e);
+}
+
+.terminal-panel,
+.automation-preview,
+.flow-log {
+  border-color: #1d342f;
+  background: #060b0a;
+}
+
+.preview-code {
+  background: #020605;
+}
+
+.flow-step-index {
+  color: #061512;
+  background: var(--accent);
+}
+
+.terminal-line-live,
+.flow-log li::before,
+.preview-code {
+  color: var(--accent-warm);
+}
+
+.terminal-line-live::after {
+  background: var(--accent-warm);
+}
+
+img.brand-photo {
+  border-color: var(--border-strong);
+}
