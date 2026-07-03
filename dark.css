@@ -104,3 +104,13 @@ body {
 img.brand-photo {
   border-color: var(--border-strong);
 }
+
+.compact-project,
+.compact-project:hover,
+.compact-project:focus-visible {
+  transform: none;
+}
+
+.compact-project:hover {
+  background: rgba(66, 215, 199, 0.06);
+}
