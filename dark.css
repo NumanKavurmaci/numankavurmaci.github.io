@@ -22,6 +22,18 @@ body {
     linear-gradient(180deg, #0b1210 0%, #0d1714 58%, #080d0c 100%);
 }
 
+a,
+button,
+summary {
+  transition: opacity 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+a:hover,
+button:hover,
+summary:hover {
+  transform: none;
+}
+
 .site-header,
 .proof-strip span,
 .impact-grid span,
@@ -86,6 +98,15 @@ body {
   background: #020605;
 }
 
+.preview-row {
+  grid-template-columns: minmax(0, 1.1fr) minmax(90px, 0.55fr) minmax(0, 1.25fr);
+  align-items: center;
+}
+
+.preview-row span {
+  min-width: 0;
+}
+
 .flow-step-index {
   color: #061512;
   background: var(--accent);
@@ -113,4 +134,21 @@ img.brand-photo {
 
 .compact-project:hover {
   background: rgba(66, 215, 199, 0.06);
+}
+
+.project-grid-featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1080px) {
+  .project-grid-featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid-featured,
+  .preview-row {
+    grid-template-columns: 1fr;
+  }
 }
