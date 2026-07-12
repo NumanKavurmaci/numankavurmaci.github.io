@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!terminalLine || !terminalStatus) return;
 
   const sequence = [
-    ['reviewing backend project...', 'Keep API behavior predictable.'],
-    ['checking Hono route behavior...', 'Return clear responses for invalid access.'],
-    ['checking Prisma and SQLite rules...', 'Make data rules visible in the model.'],
-    ['checking EPG logic per live channel...', 'Schedules should stay scoped and safe.'],
+    ['reviewing SaatCMS middleware...', 'Keep API behavior predictable.'],
+    ['checking CMS authentication and roles...', 'Fail closed and authorize every mutation.'],
+    ['checking PostgreSQL migrations...', 'Keep schema changes durable and repeatable.'],
+    ['checking concurrent EPG writes...', 'Block schedule overlaps even when requests race.'],
   ];
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

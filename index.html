@@ -111,11 +111,11 @@
                 <span></span>
                 <strong>production-check.ts</strong>
               </div>
-              <pre class="terminal-output" aria-live="polite"><span class="terminal-line">$ run checks --target backend-take-home</span>
-<span class="terminal-line">[hono] validate content and playback endpoints</span>
-<span class="terminal-line">[prisma] check SQLite relations and constraints</span>
-<span class="terminal-line">[epg] protect channel-scoped schedules</span>
-<span class="terminal-line terminal-line-live" id="terminal-line">reviewing Backend Developer Take-Home Assignment...</span></pre>
+              <pre class="terminal-output" aria-live="polite"><span class="terminal-line">$ run checks --target saatcms-middleware</span>
+<span class="terminal-line">[hono] validate middleware and secured CMS routes</span>
+<span class="terminal-line">[postgres] verify migrations and readiness</span>
+<span class="terminal-line">[epg] enforce race-safe, overlap-free schedules</span>
+<span class="terminal-line terminal-line-live" id="terminal-line">reviewing SaatCMS Middleware Core...</span></pre>
               <div class="terminal-readout">
                 <span>Working rule</span>
                 <strong id="terminal-status">Keep API behavior predictable.</strong>
@@ -132,18 +132,18 @@
             </div>
           </div>
 
-          <article class="project-feature" id="backend-take-home">
+          <article class="project-feature" id="saatcms-middleware">
             <div class="project-feature-copy">
-              <p class="micro-label">TypeScript / Hono / Prisma / SQLite</p>
-              <h3>Backend Developer Take-Home Assignment</h3>
+              <p class="micro-label">TypeScript / Hono / Prisma / PostgreSQL</p>
+              <h3>SaatCMS Middleware Core</h3>
               <p class="project-summary">
-                A backend API project covering content hierarchy, metadata, playback rules, live channels, and EPG scheduling.
+                A production-minded OTT middleware and CMS API with inherited metadata, gated playback, role-protected CRUD, and concurrency-safe EPG scheduling.
               </p>
-              <div class="impact-grid" aria-label="Backend project highlights">
-                <span>REST API design</span>
-                <span>Domain validation</span>
-                <span>EPG overlap checks</span>
-                <span>SQLite + Prisma</span>
+              <div class="impact-grid" aria-label="SaatCMS project highlights">
+                <span>CMS CRUD + RBAC</span>
+                <span>Metadata inheritance</span>
+                <span>PostgreSQL constraints</span>
+                <span>CI + deploy rehearsal</span>
               </div>
               <div class="project-actions">
                 <a class="text-link" href="https://backend-developer-take-home-assignment.onrender.com/" target="_blank" rel="noopener">Live API</a>
@@ -151,15 +151,15 @@
               </div>
             </div>
 
-            <div class="automation-preview" aria-label="Backend project preview">
+            <div class="automation-preview" aria-label="SaatCMS project preview">
               <div class="preview-top">
-                <span>Backend project</span>
-                <strong>Take-home assignment</strong>
+                <span>OTT middleware</span>
+                <strong>Production-minded API</strong>
               </div>
               <div class="preview-metrics">
                 <span><strong>Hono</strong> API</span>
-                <span><strong>Prisma</strong> data</span>
-                <span><strong>EPG</strong> rules</span>
+                <span><strong>PostgreSQL</strong> data</span>
+                <span><strong>Vitest</strong> coverage</span>
               </div>
               <div class="preview-table" aria-hidden="true">
                 <div class="preview-row preview-row-head">
@@ -168,23 +168,23 @@
                   <span>Goal</span>
                 </div>
                 <div class="preview-row">
-                  <span>Content hierarchy</span>
-                  <span>Prisma</span>
-                  <span>Parent-child validation</span>
+                  <span>CMS CRUD</span>
+                  <span>RBAC + ETags</span>
+                  <span>Safe content operations</span>
                 </div>
                 <div class="preview-row">
-                  <span>Live channel EPG</span>
-                  <span>SQLite</span>
-                  <span>No schedule overlap</span>
+                  <span>EPG scheduling</span>
+                  <span>PostgreSQL</span>
+                  <span>Race-safe overlap guard</span>
                 </div>
                 <div class="preview-row">
-                  <span>Playback rules</span>
+                  <span>Playback gatekeeper</span>
                   <span>Hono</span>
-                  <span>Clear API errors</span>
+                  <span>Geo + device rules</span>
                 </div>
               </div>
               <div class="preview-code">
-                <code>content -> rules -> schedule -> predictable API response</code>
+                <code>auth -> domain rules -> transaction -> observable response</code>
               </div>
             </div>
           </article>
